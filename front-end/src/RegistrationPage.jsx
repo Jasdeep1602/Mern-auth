@@ -17,7 +17,7 @@ const RegistrationPage = () => {
     console.log('Register');
     try {
       const response = await axios.post(
-        'http://localhost:8000/registration',
+        'https://mern-auth-back-end.onrender.com/registration',
         user
       );
       console.log(response.data);

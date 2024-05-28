@@ -16,7 +16,10 @@ const LoginPage = () => {
     e.preventDefault();
     console.log('login');
     try {
-      const response = await axios.post('http://localhost:8000/login', user);
+      const response = await axios.post(
+        'https://mern-auth-back-end.onrender.com/login',
+        user
+      );
       const { message, success } = response.data;
 
       if (success) {

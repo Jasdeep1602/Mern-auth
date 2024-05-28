@@ -4,12 +4,15 @@ import RegistrationPage from './RegistrationPage';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path='/login' element={<LoginPage />}></Route>
-        <Route path='/registration' element={<RegistrationPage />}></Route>
-      </Routes>
-    </BrowserRouter>
+    <>
+      <div>hello</div>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/login' element={<LoginPage />}></Route>
+          <Route path='/registration' element={<RegistrationPage />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
